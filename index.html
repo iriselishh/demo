@@ -20,94 +20,47 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:15px 40px;
-}
 
-/* Logo */
 
-.logo{
-    color:white;
-    font-size:24px;
-    font-weight:bold;
-}
+    <nav class="navbar">
+        <div class="logo">WILD<span>ROOTS</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
 
-/* Navigation links */
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The Wild is Calling.</h1>
+            <p>Experience the "Big Five" in their natural habitat with our expert-guided tours.</p>
+            <button onclick="exploreAlert()">Start Your Journey</button>
+        </div>
+    </header>
 
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
-}
+    <section id="destinations" class="taxonomy-grid">
+        <h2>Choose Your Experience</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Luxury Lodges</h3>
+                <p>Five-star comfort in the heart of the savanna.</p>
+                <button class="card-btn">View Details</button>
+            </div>
+            <div class="card">
+                <h3>Photo Safaris</h3>
+                <p>Capture the perfect shot with professional guides.</p>
+                <button class="card-btn">View Details</button>
+            </div>
+            <div class="card">
+                <h3>Family Camping</h3>
+                <p>Safe, educational, and fun for all ages.</p>
+                <button class="card-btn">View Details</button>
+            </div>
+        </div>
+    </section>
 
-.nav-links a:hover{
-    color:lightgray;
-}
-
-/* Cover section */
-
-.hero{
-    height:90vh;
-    background-image:url("architecture.jpg"); /* change to your image name */
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
-
-.hero h1{
-    font-size:60px;
-    margin:0;
-}
-
-.hero p{
-    font-size:22px;
-}
-
-button{
-    padding:12px 25px;
-    font-size:16px;
-    border:none;
-    background-color:#333;
-    color:white;
-    margin-top:20px;
-    cursor:pointer;
-}
-
-button:hover{
-    background-color:#555;
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- Navigation -->
-
-<nav>
-<div class="logo">Safarix</div>
-
-<div class="nav-links">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Tours</a>
-<a href="#">Pricing</a>
-<a href="#">Contact</a>
-</div>
-</nav>
-
-<!-- Cover Section -->
-
-<div class="hero">
-<div>
-<h1></h1>
-</div>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
-<!-- Code injected by live-server -->
