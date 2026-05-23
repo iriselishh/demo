@@ -5,356 +5,341 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>NovaDrift Safarix</title>
+  <title>NovaDrift Safarix – Home</title>
 
   <!-- GOOGLE FONT -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
+    /* ================= RESET & BASE ================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
-    body{
-      font-family:'Poppins', sans-serif;
-      background:#f7f7f7;
-      color:#222;
-      line-height:1.7;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.7;
     }
 
-    img{
-      width:100%;
-      display:block;
+    img {
+      width: 100%;
+      display: block;
     }
 
-    a{
-      text-decoration:none;
-      color:inherit;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    ul{
-      list-style:none;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
     /* ================= HEADER ================= */
 
-    header{
-      background:#e6d1b8;
-      position:fixed;
-      width:100%;
-      top:0;
-      z-index:1000;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    header {
+      background: #d8b489;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
-    nav{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-      height:80px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
+    header nav {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .logo img{
-      width:170px;
-      object-fit:contain;
+    .logo img {
+      width: 170px;
+      object-fit: contain;
     }
 
-    .nav-links{
-      display:flex;
-      gap:35px;
+    .nav-links {
+      display: flex;
+      gap: 35px;
     }
 
-    .nav-links a{
-      font-size:14px;
-      font-weight:500;
-      transition:0.3s;
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
-    .nav-links a:hover{
-      color:#8d6748;
+    .nav-links a:hover {
+      color: #8d6748;
     }
 
     /* ================= HERO ================= */
 
-    .hero{
-      height:100vh;
+    .hero {
+      height: 100vh;
       background:
-      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-      url(moremi-game-drive-elephant.jpg);
-      background-size:cover;
-      background-position:center;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:white;
-      padding:20px;
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('moremi-game-drive-elephant.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
     }
 
-    .hero-content{
-      max-width:850px;
-      margin-top:60px;
+    .hero-content {
+      max-width: 850px;
+      margin-top: 60px;
     }
 
-    .hero h1{
-      font-size:60px;
-      margin-bottom:20px;
-      font-weight:600;
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-weight: 600;
     }
 
-    .hero p{
-      font-size:20px;
-      margin-bottom:35px;
-      font-weight:300;
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 35px;
+      font-weight: 300;
     }
 
-    .btn{
-      display:inline-block;
-      background:#d6ab84;
-      color:white;
-      padding:14px 34px;
-      border-radius:40px;
-      transition:0.3s;
-      font-weight:500;
+    .btn {
+      display: inline-block;
+      background: #d6ab84;
+      color: white;
+      padding: 14px 34px;
+      border-radius: 40px;
+      transition: 0.3s;
+      font-weight: 500;
     }
 
-    .btn:hover{
-      background:#b88a61;
-      transform:translateY(-2px);
+    .btn:hover {
+      background: #b88a61;
+      transform: translateY(-2px);
     }
 
     /* ================= ABOUT ================= */
 
-    .about{
-      padding:120px 8%;
-      background:white;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:70px;
-      align-items:center;
+    .about {
+      padding: 120px 8%;
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
     }
 
-    .about h2{
-      font-size:50px;
-      margin-bottom:25px;
-      color:#2b2b2b;
+    .about h2 {
+      font-size: 50px;
+      margin-bottom: 25px;
+      color: #2b2b2b;
     }
 
-    .about p{
-      color:#555;
-      margin-bottom:35px;
-      max-width:550px;
+    .about p {
+      color: #555;
+      margin-bottom: 35px;
+      max-width: 550px;
     }
 
-    .outline-btn{
-      display:inline-block;
-      padding:12px 30px;
-      border:1px solid #c49a74;
-      border-radius:40px;
-      color:#c49a74;
-      transition:0.3s;
-      font-size:14px;
+    .outline-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 1px solid #c49a74;
+      border-radius: 40px;
+      color: #c49a74;
+      transition: 0.3s;
+      font-size: 14px;
     }
 
-    .outline-btn:hover{
-      background:#c49a74;
-      color:white;
+    .outline-btn:hover {
+      background: #c49a74;
+      color: white;
     }
 
-    .about-image img{
-      width:480px;
-      height:480px;
-      object-fit:cover;
-      border-radius:50%;
-      margin:auto;
+    .about-image img {
+      width: 480px;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: auto;
     }
 
-    /* ================= OFFER ================= */
+    /* ================= WHAT WE OFFER ================= */
 
-    .offer{
-      padding:120px 8%;
+    .offer {
+      padding: 120px 8%;
     }
 
-    .section-title{
-      text-align:center;
-      font-size:48px;
-      margin-bottom:70px;
-      color:#2b2b2b;
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 70px;
+      color: #2b2b2b;
     }
 
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:30px;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
     }
 
-    .card{
-      background:#f3e4d9;
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:0 8px 20px rgba(0,0,0,0.05);
-      transition:0.3s;
+    .card {
+      background: #f3e4d9;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
     }
 
-    .card:hover{
-      transform:translateY(-8px);
+    .card:hover {
+      transform: translateY(-8px);
     }
 
-    .card img{
-      height:240px;
-      object-fit:cover;
+    .card img {
+      height: 240px;
+      object-fit: cover;
     }
 
-    .card-content{
-      padding:28px;
+    .card-content {
+      padding: 28px;
     }
 
-    .card h3{
-      font-size:24px;
-      margin-bottom:15px;
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
     }
 
-    .card p{
-      color:#555;
-      margin-bottom:25px;
-      font-size:15px;
+    .card p {
+      color: #555;
+      margin-bottom: 25px;
+      font-size: 15px;
     }
 
     /* ================= FAQ ================= */
 
-    .faq{
-      padding:120px 5%;
-      background:white;
+    .faq {
+      padding: 120px 5%;
+      background: white;
     }
 
-    .faq details{
-      max-width:900px;
-      margin:0 auto 20px;
-      padding:25px 30px;
-      border-radius:14px;
-      background:#f7f7f7;
-      border:1px solid #ddd;
-      transition:0.3s;
+    .faq details {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      padding: 25px 30px;
+      border-radius: 14px;
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      transition: 0.3s;
     }
 
-    .faq details[open]{
-      background:#f3e4d9;
-      border-color:#d2b093;
+    .faq details[open] {
+      background: #f3e4d9;
+      border-color: #d2b093;
     }
 
-    .faq summary{
-      cursor:pointer;
-      font-size:18px;
-      font-weight:600;
-      list-style:none;
-      position:relative;
-      padding-right:30px;
+    .faq summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      list-style: none;
+      position: relative;
+      padding-right: 30px;
     }
 
-    .faq summary::-webkit-details-marker{
-      display:none;
+    .faq summary::-webkit-details-marker {
+      display: none;
     }
 
-    .faq summary::after{
-      content:"+";
-      position:absolute;
-      right:0;
-      top:0;
-      font-size:22px;
+    .faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 22px;
     }
 
-    .faq details[open] summary::after{
-      content:"−";
+    .faq details[open] summary::after {
+      content: "−";
     }
 
-    .faq p{
-      margin-top:18px;
-      color:#555;
-      font-size:15px;
+    .faq p {
+      margin-top: 18px;
+      color: #555;
+      font-size: 15px;
     }
 
     /* ================= FOOTER ================= */
 
-    footer{
-      background:#7da26f;
-      color:white;
-      padding:80px 8% 30px;
+    footer {
+      background: #7da26f;
+      padding: 120px 8% 40px;
     }
 
-    .footer-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:50px;
-      margin-bottom:50px;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 80px;
+      max-width: 1200px;
     }
 
-    footer h4{
-      margin-bottom:18px;
-      font-size:18px;
+    footer h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1e3320;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
     }
 
-    footer a{
-      display:block;
-      margin-bottom:10px;
-      font-size:14px;
-      color:#f1f1f1;
+    footer ul li {
+      margin-bottom: 10px;
     }
 
-    footer p{
-      font-size:14px;
-      color:#f1f1f1;
+    footer ul li a {
+      font-size: 14px;
+      color: #2a3d2a;
+      transition: opacity 0.3s;
     }
 
-    .copyright{
-      border-top:1px solid rgba(255,255,255,0.3);
-      padding-top:25px;
-      text-align:center;
-      font-size:13px;
-      display:block;
+    footer ul li a:hover {
+      opacity: 0.7;
     }
 
-    /* ================= RESPONSIVE ================= */
+    footer address {
+      font-style: normal;
+    }
 
-    @media(max-width:950px){
+    footer address p {
+      font-size: 14px;
+      color: #2a3d2a;
+      margin-bottom: 8px;
+    }
 
-      .hero h1{
-        font-size:42px;
-      }
-
-      .about{
-        grid-template-columns:1fr;
-      }
-
-      .cards{
-        grid-template-columns:1fr;
-      }
-
-      .footer-grid{
-        grid-template-columns:1fr;
-      }
-
-      .nav-links{
-        display:none;
-      }
-
-      .about-image img{
-        width:100%;
-        height:auto;
-        border-radius:20px;
-      }
-
+    .copyright {
+      border-top: 1px solid rgba(0,0,0,0.15);
+      padding-top: 25px;
+      text-align: left;
+      font-size: 13px;
+      display: block;
+      color: #2a3d2a;
     }
 
   </style>
@@ -369,37 +354,38 @@
 
     <nav aria-label="Primary Navigation">
 
-      <a href="#" class="logo">
-
-        <img src="Leopard logo for NOVADRIFT SAFARIX.png" alt="NovaDrift Safarix Logo">
-
+      <!-- EDIT: update href to index.html when linking pages -->
+      <a href="index.html" class="logo">
+        <!-- EDIT: make sure logo file name matches exactly -->
+        <img src="Leopard logo for NOVADRIFT SAFARIX.png"
+             alt="NovaDrift Safarix Logo">
       </a>
 
       <ul class="nav-links">
-
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Experiences</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
 
     </nav>
 
   </header>
 
+
   <!-- ================= MAIN ================= -->
 
   <main>
 
-    <!-- HERO -->
+    <!-- ── HERO ──
+         EDIT: replace moremi-game-drive-elephant.jpg with your hero image file name
+    -->
+    <section class="hero" aria-label="Hero banner">
 
-    <section class="hero">
-
-      <article class="hero-content">
+      <div class="hero-content">
 
         <h1>Discover the Wild Heart of Botswana</h1>
 
@@ -408,140 +394,120 @@
           One unforgettable wilderness experience.
         </p>
 
-        <a href="#" class="btn">
+        <a href="experiences.html" class="btn">
           Explore Destinations
         </a>
 
-      </article>
+      </div>
 
     </section>
 
-    <!-- ABOUT -->
 
+    <!-- ── ABOUT ──
+         EDIT: replace safarilady.webp with your actual image file name
+    -->
     <section class="about" aria-labelledby="about-title">
 
       <article>
 
-        <h2 id="about-title">
-          About NovaDrift Safarix
-        </h2>
+        <h2 id="about-title">About NovaDrift Safarix</h2>
 
         <p>
           NovaDrift Safarix is a Botswana-based safari experience brand
-          connecting travelers with the breathtaking beauty of Africa’s
+          connecting travelers with the breathtaking beauty of Africa's
           finest wilderness. From the elephant-rich plains of Chobe to
           the peaceful waterways of the Okavango Delta and the remote
           luxury of Linyanti, we create immersive safari journeys beyond
           ordinary travel experiences.
         </p>
 
-        <a href="#" class="outline-btn">
-          Learn More
-        </a>
+        <a href="about.html" class="outline-btn">Learn More</a>
 
       </article>
 
       <figure class="about-image">
-
-        <img 
-          src="safarilady.webp"
-          alt="Safari wildlife experience in Botswana"
-        >
-
+        <!-- EDIT: replace safarilady.webp with your actual image -->
+        <img src="safarilady.webp"
+             alt="Safari guide with binoculars on a mokoro in Botswana">
       </figure>
 
     </section>
 
-    <!-- WHAT WE OFFER -->
 
+    <!-- ── WHAT WE OFFER ──
+         EDIT: replace image file names with your actual images
+    -->
     <section class="offer" aria-labelledby="offer-title">
 
-      <h2 id="offer-title" class="section-title">
-        What We Offer
-      </h2>
+      <h2 id="offer-title" class="section-title">What We Offer</h2>
 
-      <section class="cards">
+      <div class="cards">
 
+        <!-- Card 1: Destinations -->
         <article class="card">
 
-          <img 
-            src="zebras.jpg"
-            alt="Botswana safari destination"
-          >
+          <!-- EDIT: replace zebras.jpg with your image -->
+          <img src="zebras.jpg"
+               alt="Zebras in Botswana safari destination">
 
-          <section class="card-content">
-
+          <div class="card-content">
             <h3>Our Destinations</h3>
-
             <p>
-              Explore Botswana’s iconic safari regions including Chobe,
+              Explore Botswana's iconic safari regions including Chobe,
               Moremi and Linyanti — rich with wildlife and natural beauty.
             </p>
-
-            <a href="#" class="outline-btn">
-              Learn More
-            </a>
-
-          </section>
+            <a href="destinations.html" class="outline-btn">Learn More</a>
+          </div>
 
         </article>
 
+        <!-- Card 2: Experiences -->
         <article class="card">
 
-          <img 
-            src="moremi-game-drive-elephant.jpg"
-            alt="Safari experience"
-          >
+          <!-- EDIT: replace image -->
+          <img src="moremi-game-drive-elephant.jpg"
+               alt="Elephant during a game drive in Moremi">
 
-          <section class="card-content">
-
+          <div class="card-content">
             <h3>Safari Experiences</h3>
-
             <p>
               Enjoy guided game drives, mokoro excursions,
               luxury bush stays, photography tours and magical
               stargazing adventures.
             </p>
-
-            <a href="#" class="outline-btn">
-              Learn More
-            </a>
-
-          </section>
+            <a href="experiences.html" class="outline-btn">Learn More</a>
+          </div>
 
         </article>
 
+        <!-- Card 3: Culture -->
         <article class="card">
 
-          <img 
-            src="Botswana_traditional_baskets.jpg"
-            alt="Botswana culture"
-          >
+          <!-- EDIT: replace image -->
+          <img src="Botswana_traditional_baskets.jpg"
+               alt="Traditional Botswana handcrafted baskets">
 
-          <section class="card-content">
-
+          <div class="card-content">
             <h3>Botswana Culture</h3>
-
             <p>
               Discover local traditions, cuisine, storytelling,
               handcrafted art and meaningful cultural experiences
               with local communities.
             </p>
-
-            <a href="#" class="outline-btn">
-              Learn More
-            </a>
-
-          </section>
+            <a href="culture.html" class="outline-btn">Learn More</a>
+          </div>
 
         </article>
 
-      </section>
+      </div>
 
     </section>
 
-    <!-- FAQ -->
 
+    <!-- ── FAQ ──
+         Each question has its own <details> block
+         EDIT: change questions and answers as needed
+    -->
     <section class="faq" aria-labelledby="faq-title">
 
       <h2 id="faq-title" class="section-title">
@@ -549,122 +515,103 @@
       </h2>
 
       <details open>
-
-        <summary>
-          Can I customize my safari experience?
-        </summary>
-
+        <summary>Can I customize my safari experience?</summary>
         <p>
           Yes. We create personalized safari itineraries based on your
           interests, preferred activities, travel style and budget.
         </p>
-
       </details>
 
       <details>
-
-        <summary>
-          What should I pack for a safari?
-        </summary>
-
+        <summary>What should I pack for a safari?</summary>
         <p>
           We recommend lightweight neutral clothing, sunscreen,
           binoculars, comfortable walking shoes and a good camera.
+          Avoid bright colours and strong perfumes around wildlife.
         </p>
-
       </details>
 
       <details>
-
-        <summary>
-          Which safari destinations do you offer?
-        </summary>
-
+        <summary>Which safari destinations do you offer?</summary>
         <p>
           We offer safari experiences across Chobe National Park,
-          Moremi Game Reserve, Okavango Delta and Linyanti.
+          Moremi Game Reserve and Linyanti Wildlife Reserve.
         </p>
-
       </details>
 
       <details>
-
-        <summary>
-          Are your safari tours guided?
-        </summary>
-
+        <summary>Are your safari tours guided?</summary>
         <p>
           Yes. All our safari experiences are led by experienced
-          local guides with deep wildlife expertise.
+          local guides with deep wildlife expertise and safety training.
         </p>
+      </details>
 
-        <summary>
-          How do I make a booking?
-        </summary>
-
+      <details>
+        <summary>How do I make an enquiry?</summary>
         <p>
-          You can contact us through the website contact form or email us directly.
+          You can reach us through the Contact page on our website
+          or email us directly at info@novadriftsafarix.co.bw.
+          We respond within 24 hours.
         </p>
+      </details>
 
-        <summary>
-          Are your safaris family friendly?
-        </summary>
-
+      <details>
+        <summary>Are your safaris family friendly?</summary>
         <p>
-          Yes, we offer experiences suitable for families, couples and solo travelers.
+          Yes. We offer experiences suitable for families, couples
+          and solo travellers. Activities can be tailored to suit
+          different age groups and fitness levels.
         </p>
-
       </details>
 
     </section>
 
   </main>
-
-  <!-- ================= FOOTER ================= -->
+ <!-- ================= FOOTER ================= -->
 
   <footer>
 
-    <section class="footer-grid">
+    <div class="footer-grid">
 
-      <nav aria-label="Footer Navigation">
-
+      <nav aria-label="Footer Explore Navigation">
         <h4>Explore</h4>
-
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Experiences</a>
-        <a href="#">Culture</a>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="destinations.html">Discover</a></li>
+        </ul>
       </nav>
 
-      <nav aria-label="Discover Navigation">
-
+      <nav aria-label="Footer Discover Navigation">
         <h4>Discover</h4>
-
-        <a href="#">Destinations</a>
-        <a href="#">Gallery</a>
-        <a href="#">Flora & Fauna</a>
-        <a href="#">Contact</a>
-
+        <ul>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="destinations.html#flora">Flora &amp; Fauna</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
 
       <address>
-
         <h4>Contact</h4>
-
         <p>info@novadriftsafarix.co.bw</p>
         <p>+267 76 154 284</p>
         <p>Gaborone, Botswana</p>
-
       </address>
 
-    </section>
+    </div>
 
     <small class="copyright">
-      © 2026 NovaDrift Safarix. All rights reserved.
+      &copy; 2026 NovaDrift Safarix. All rights reserved.
     </small>
 
   </footer>
 
 </body>
 </html>
+
+
+    
