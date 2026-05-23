@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NovaDrift Safarix | About Us</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f7f7f7;
+      color:#222;
+      line-height:1.7;
+    }
+
+    img{
+      width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    ul{
+      list-style:none;
+    }
+
+    /* ================= NAVIGATION ================= */
+
+    header{
+      background:#d8b489;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      height:80px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo img{
+      width:170px;
+      object-fit:contain;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:35px;
+    }
+
+    .nav-links a{
+      font-size:14px;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:white;
+    }
+
+    /* ================= GLOBAL SECTION ================= */
+
+    section{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:100px 0;
+    }
+
+    h2{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:70px;
+      color:#222;
+    }
+
+    /* ================= MISSION ================= */
+
+    .mission-content{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .mission-image img{
+      border-radius:10px;
+      height:400px;
+      object-fit:cover;
+    }
+
+    .mission-text h3{
+      margin:35px 0 20px;
+      font-size:20px;
+      color:#444;
+    }
+
+    .mission-text p{
+      margin-bottom:20px;
+      color:#555;
+    }
+
+    .mission-text li{
+      margin-bottom:12px;
+      color:#444;
+    }
+
+    /* ================= GUIDES ================= */
+
+    .guides-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:35px;
+    }
+
+    .guide-card{
+      background:#efefef;
+      padding:40px 25px;
+      border-radius:16px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .guide-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .guide-icon{
+      width:120px;
+      height:120px;
+      margin:auto;
+      margin-bottom:25px;
+      border-radius:50%;
+      background:#e89b73;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:60px;
+      color:white;
+    }
+
+    .guide-card h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .guide-role{
+      font-size:14px;
+      color:#777;
+      margin-bottom:15px;
+    }
+
+    .guide-card p{
+      font-size:14px;
+      color:#555;
+    }
+
+    /* ================= SUSTAINABILITY ================= */
+
+    .sustainability-content{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .sustainability-image img{
+      border-radius:10px;
+      height:350px;
+      object-fit:cover;
+    }
+
+    .sustainability-content p{
+      color:#444;
+      font-size:16px;
+    }
+
+    /* ================= BEST TIME ================= */
+
+    .visit-box{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:15px;
+      padding:60px 40px;
+    }
+
+    .visit-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:35px;
+      margin-top:50px;
+    }
+
+    .season-card{
+      background:#b8d88b;
+      padding:45px 20px;
+      border-radius:12px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .season-card:hover{
+      transform:scale(1.03);
+    }
+
+    .season-card h3{
+      margin-bottom:10px;
+      font-size:20px;
+      color:#2e4a1f;
+    }
+
+    .season-card p{
+      color:#2e4a1f;
+      font-size:15px;
+    }
+
+     /* ================= FOOTER ================= */
+
+    footer {
+      background: #7da26f;
+      padding: 120px 8% 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 80px;
+      max-width: 1200px;
+    }
+
+    footer h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1e3320;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    footer ul li a {
+      font-size: 14px;
+      color: #2a3d2a;
+      transition: opacity 0.3s;
+    }
+
+    footer ul li a:hover {
+      opacity: 0.7;
+    }
+
+    footer address {
+      font-style: normal;
+    }
+
+    footer address p {
+      font-size: 14px;
+      color: #2a3d2a;
+      margin-bottom: 8px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(0,0,0,0.15);
+      padding-top: 25px;
+      text-align: left;
+      font-size: 13px;
+      display: block;
+      color: #2a3d2a;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media(max-width:950px){
+
+      .mission-content,
+      .sustainability-content,
+      .guides-grid,
+      .visit-grid{
+        grid-template-columns:1fr;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      h2{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <nav aria-label="Primary Navigation">
+
+      <a href="index.html" class="logo">
+
+        <img src="your-logo.png" alt="NovaDrift Safarix Logo">
+
+      </a>
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+        <li><a href="experiences.html">Experiences</a></li>
+
+        <li><a href="culture.html">Culture</a></li>
+
+        <li><a href="destinations.html">Destinations</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+    <!-- OUR MISSION -->
+
+    <section class="mission" id="mission">
+
+      <h2>Our Mission</h2>
+
+      <article class="mission-content">
+
+        <figure class="mission-image">
+
+          <img 
+            src="our mission.jpg"
+            alt="Safari vehicle in Botswana"
+          >
+
+        </figure>
+
+        <article class="mission-text">
+
+          <p>
+            Our mission is simple — to offer immersive, responsible and
+            unforgettable safari experiences that celebrate Botswana’s
+            breathtaking wildlife, landscapes and culture while promoting
+            sustainable tourism that supports local communities.
+          </p>
+
+          <h3>Mission & Values</h3>
+
+          <ul>
+
+            <li>
+              <strong>Sustainability:</strong>
+              We operate with minimal environmental impact.
+            </li>
+
+            <li>
+              <strong>Community:</strong>
+              We support local guides, artisans and villages.
+            </li>
+
+            <li>
+              <strong>Conservation:</strong>
+              We advocate for Botswana’s wildlife protection.
+            </li>
+
+            <li>
+              <strong>Authenticity:</strong>
+              Every experience is genuine and meaningful.
+            </li>
+
+          </ul>
+
+        </article>
+
+      </article>
+
+    </section>
+
+   <!-- MEET OUR GUIDES -->
+<section class="guides-section">
+  <div class="container-nd">
+    <header class="guides-header">
+      <span class="section-label">The People Behind the Experience</span>
+
+      <h2>Meet Our Guides</h2>
+    </header>
+
+    <ul class="guides-grid">
+
+      <li class="guide-card">
+        <figure class="guide-photo g1">
+          <img src= "aliciamoyo.jpg"
+               alt="Alicia Moyo — Night Safari and Astronomy Guide"
+               width="100%" height="100%">
+        </figure>
+        <article class="guide-body">
+          <h3 class="guide-name">Alicia Moyo</h3>
+          <span class="guide-role">Night Safari & Astronomy Guide</span>
+          <span class="guide-exp">6 years experience</span>
+          <p>Oratile specialises in night safari experiences and unforgettable stargazing adventures. Growing up in the remote Kalahari, she brings the cosmos to life through San storytelling traditions and deep knowledge of Botswana's nocturnal wildlife.</p>
+        </article>
+      </li>
+
+      <li class="guide-card">
+        <figure class="guide-photo g2">
+          <img src="olebogengphuthego.jpg"
+               alt="Olebogeng Phuthego — Cultural Experience Guide"
+               width="100%" height="100%">
+        </figure>
+        <article class="guide-body">
+          <h3 class="guide-name">Olebogeng Phuthego</h3>
+          <span class="guide-role">Cultural Experience Guide</span>
+          <span class="guide-exp">7 years experience</span>
+          <p>Olebogeng shares Botswana's living traditions through storytelling, village visits and cultural immersion. Raised in a traditional Batswana household, she brings warmth, authenticity and deep cultural knowledge to every experience she leads.</p>
+        </article>
+      </li>
+
+      <li class="guide-card">
+        <figure class="guide-photo g3">
+          <img src="cooperramosweu.jpg" 
+               alt="Cooper Ramosweu — Lead Safari Guide"
+               width="100%" height="100%">
+        </figure>
+        <article class="guide-body">
+          <h3 class="guide-name">Cooper Ramosweu</h3>
+          <span class="guide-role">Lead Safari Guide</span>
+          <span class="guide-exp">10 years experience</span>
+          <p>Cooper brings extensive knowledge of Botswana's wildlife, bird species and safari tracking techniques. With over a decade guiding across Chobe, Moremi and Linyanti, his instinct for finding wildlife and reading the bush is unmatched.</p>
+        </article>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+    <!-- SUSTAINABILITY -->
+
+    <section class="sustainability" id="sustainability">
+
+      <h2>Sustainability & Conservation</h2>
+
+      <article class="sustainability-content">
+
+        <article>
+
+          <p>
+            At NovaDrift Safarix, we believe responsible tourism and
+            conservation go hand in hand. We minimize environmental
+            impact, support local communities and actively contribute
+            to the protection of Botswana’s wildlife and ecosystems.
+          </p>
+
+        </article>
+
+        <figure class="sustainability-image">
+
+          <img 
+            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1200&auto=format&fit=crop"
+            alt="Elephants in Botswana"
+          >
+
+        </figure>
+
+      </article>
+
+    </section>
+
+    <!-- BEST TIME TO VISIT -->
+
+    <section class="visit" id="visit">
+
+      <article class="visit-box">
+
+        <h2>Best Time to Visit</h2>
+
+        <section class="visit-grid">
+
+          <article class="season-card">
+
+            <h3>Dry Season</h3>
+
+            <p>May — October</p>
+
+          </article>
+
+          <article class="season-card">
+
+            <h3>Green Season</h3>
+
+            <p>November — April</p>
+
+          </article>
+
+          <article class="season-card">
+
+            <h3>Peak Season</h3>
+
+            <p>July — October</p>
+
+          </article>
+
+        </section>
+
+      </article>
+
+    </section>
+
+  </main>
+
+ <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <nav aria-label="Footer Explore Navigation">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="destinations.html">Discover</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Footer Discover Navigation">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="destinations.html#flora">Flora &amp; Fauna</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <address>
+        <h4>Contact</h4>
+        <p>info@novadriftsafarix.co.bw</p>
+        <p>+267 76 154 284</p>
+        <p>Gaborone, Botswana</p>
+      </address>
+
+    </div>
+
+    <small class="copyright">
+      &copy; 2026 NovaDrift Safarix. All rights reserved.
+    </small>
+
+  </footer>
+
+</body>
+</html>
+
+
+    
